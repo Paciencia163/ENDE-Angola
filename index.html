@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento ENDE Angola</title>
+
+    <!-- Estilo institucional ENDE -->
+    <style>
+        :root {
+            --ende-red: #c00000;
+            --ende-black: #000000;
+            --light-gray: #f4f4f4;
+            --dark-gray: #333333;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+        }
+
+        header {
+            background-color: var(--ende-black);
+            color: white;
+            padding: 20px 16px;
+            text-align: center;
+            border-bottom: 5px solid var(--ende-red);
+        }
+
+        header img {
+            max-width: 140px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+        }
+
+        header p {
+            margin: 6px 0 0;
+            font-size: 0.95rem;
+            color: #ddd;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 16px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--ende-red);
+        }
+
+        .card h2 {
+            color: var(--ende-black);
+            margin-top: 0;
+        }
+
+        .scope {
+            border-left: 6px solid var(--ende-red);
+            background: #fff5f5;
+            padding: 16px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            background: var(--ende-black);
+            padding: 16px;
+            font-size: 0.85rem;
+            text-align: center;
+            color: #ccc;
+            border-top: 4px solid var(--ende-red);
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.3rem;
+            }
+
+            header img {
+                max-width: 110px;
+            }
+
+            main {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho institucional -->
+    <header>
+        <img src="ende.png" alt="ENDE - Empresa Nacional de Distribuição de Electricidade">
+        <h1>Atendimento Virtual – ENDE Angola</h1>
+        <p>Empresa Nacional de Distribuição de Electricidade</p>
+    </header>
+
+    <main>
+
+        <!-- Apresentação -->
+        <section class="card">
+            <h2>Assistente Virtual ENDE</h2>
+            <p>
+                Este assistente virtual foi criado para apoiar cidadãos e empresas com informações
+                sobre os serviços prestados pela <strong>ENDE – Empresa Nacional de Distribuição de Electricidade</strong>.
+            </p>
+        </section>
+
+        <!-- Escopo do chatbot -->
+        <section class="card scope">
+            <h2>Escopo de Atendimento</h2>
+            <p>
+                O chatbot responde <strong>exclusivamente</strong> a questões relacionadas aos serviços da ENDE, incluindo:
+            </p>
+            <ul>
+                <li>Faturas, consumo e tarifas de energia elétrica</li>
+                <li>Contadores pré-pagos e pós-pagos</li>
+                <li>Compra de energia (token)</li>
+                <li>Nova ligação, alteração de titular e serviços administrativos</li>
+                <li>Avarias, falta de energia e procedimentos de atendimento</li>
+            </ul>
+            <p>
+                Perguntas fora deste escopo não serão respondidas.
+            </p>
+        </section>
+
+        <!-- Widget do Chatbot -->
+        <section class="card">
+            <h2>Iniciar Atendimento</h2>
+
+            <chat-bot 
+                platform_id="2f0ead99-1b9e-4cbd-84d7-a229c0b3e3a0" 
+                user_id="8ebf825d-1828-41a6-9eed-8b3e611190df" 
+                chatbot_id="af09425b-a8ec-46ed-90a2-e022da4d07f3">
+                <a href="https://www.expertise.ai/?utm_source=widget&utm_medium=referral">
+                    expertise.ai - AI SDR Agent
+                </a>
+            </chat-bot>
+        </section>
+
+    </main>
+
+    <!-- Aviso legal -->
+    <footer>
+        <p>
+            ⚠️ <strong>Aviso Legal:</strong> Este assistente virtual tem caráter informativo.
+            As informações fornecidas não substituem o atendimento presencial da ENDE.
+            Procedimentos, tarifas e prazos podem variar conforme a província ou zona.
+        </p>
+    </footer>
+
+    <script src="https://cdn.expertise.ai/chat-bot-loader.js" defer></script>
+
+</body>
+</html>
